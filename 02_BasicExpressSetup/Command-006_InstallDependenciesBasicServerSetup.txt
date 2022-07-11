@@ -1,0 +1,21 @@
+
+
+->npm i express mongoose passport passport-jwt jsonwebtoken body-parser bcryptjs validator
+->npm i -D nodemon
+->node server
+
+package.json->
+Edit
+ "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+
+to 
+ "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js"
+  },
+
+->npm start (Once time and again reload once)
+->npm run server (Only one time auto run)
