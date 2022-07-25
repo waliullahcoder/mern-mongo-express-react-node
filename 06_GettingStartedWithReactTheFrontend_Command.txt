@@ -1,0 +1,29 @@
+
+
+Command List for Getting Start React App
+==========================================
+->npm i -g create-react-app (i is install -g is golabally installation react app)
+->npm i -g npm (Update available 5.5.1 to 5.8.0 Run npm i -g npm to update)
+->create-react-app <react_project_name>
+->cd <react_project_name>
+
+Change to client's package.josn after last
+=========================================
+"proxy": "http://localhost:5000"
+======================
+->npm start
+->npm i concurrently (One command Multiple server run [One command multiple command combine run by this module])
+
+After concurrently install have to changes in node server package.json
+=================================================================
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+
+->npm run dev (AFter this command will be run below 2 server)
+http://localhost:3000 (Client React App)
+http://localhost:5000 (Node Server API)
