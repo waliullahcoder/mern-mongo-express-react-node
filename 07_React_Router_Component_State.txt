@@ -1,0 +1,22 @@
+
+
+Command List for 07_React_Router_Component_State
+==========================================
+->cd client
+->npm i react-router-dom (i is install react router)
+->cd ..
+->npm run dev
+->cd client
+->npm i axios
+->npm i classnames
+->cd ..
+->npm run dev
+
+====in node js===
+->npm i cors
+->npm i http-proxy-middleware
+
+use in server.js
+===
+var cors = require('cors');
+app.use(cors());

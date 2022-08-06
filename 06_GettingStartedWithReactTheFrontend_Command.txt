@@ -11,9 +11,13 @@ Change to client's package.josn after last
 =========================================
 "proxy": "http://localhost:5000"
 ======================
+->cd client
 ->npm start
+
+->cd ..
 ->npm i concurrently (One command Multiple server run [One command multiple command combine run by this module])
 
+Node js ->package.json
 After concurrently install have to changes in node server package.json
 =================================================================
   "scripts": {
@@ -27,3 +31,9 @@ After concurrently install have to changes in node server package.json
 ->npm run dev (AFter this command will be run below 2 server)
 http://localhost:3000 (Client React App)
 http://localhost:5000 (Node Server API)
+
+->Change to client/public/index.html (CSS and JS path)
+
+
+
+
