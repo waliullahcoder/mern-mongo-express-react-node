@@ -1,0 +1,7 @@
+
+
+Command List for 08_Redux_Authentication
+==========================================
+->cd client
+->npm i redux react-redux redux-thunk (i is install)
+->npm i jwt-decode (jwt-decode)
